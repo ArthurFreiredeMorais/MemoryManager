@@ -13,8 +13,9 @@ public class Execute {
 		SystemOperation.systemCall(SystemCallType.WRITE_PROCESS, p4);
 		Process p5 = SystemOperation.systemCall(SystemCallType.CREATE_PROCESS, new Process(8, "P5"));
 		SystemOperation.systemCall(SystemCallType.WRITE_PROCESS, p5);
-		Process p6 = SystemOperation.systemCall(SystemCallType.CREATE_PROCESS, new Process(40, "P5"));
+		Process p6 = SystemOperation.systemCall(SystemCallType.CREATE_PROCESS, new Process(40, "P6"));
 		SystemOperation.systemCall(SystemCallType.WRITE_PROCESS, p6);
+		SystemOperation.systemCall(SystemCallType.CLOSE_PROCESS, p6);
 		
 	}
 
