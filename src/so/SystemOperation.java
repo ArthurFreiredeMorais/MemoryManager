@@ -14,7 +14,7 @@ public class SystemOperation {
 		if (type.equals(SystemCallType.CREATE_PROCESS)) {
 			System.out.println("Creating Process: " + p.getId());
 			if (mm == null) {
-				mm = new MemoryManager(Strategy.FIRST_FIT);
+				mm = new MemoryManager(Strategy.WORST_FIT);
 			}
 			if (cm == null) {
 				cm = new CpuManager();
