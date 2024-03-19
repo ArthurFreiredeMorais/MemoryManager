@@ -87,7 +87,7 @@ public class MemoryManager {
 		for (int i = 0; i < physicMemory.length; i++) {
 			if (this.physicMemory[i] != null) {
 				if (actualSize > biggerSize && actualSize >= p.getSizeInMemory()) {
-					biggerSize = (i - actualSize) + 1;
+					biggerSize = (i - actualSize);
 					actualSize = 0;
 				} else {
 					actualSize = 0;
